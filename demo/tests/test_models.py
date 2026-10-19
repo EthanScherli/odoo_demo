@@ -40,6 +40,6 @@ class TestPartners(TransactionCase):
         minecraft = self.env.ref('demo.hobby_minecraft')
         with self.assertRaises(ValidationError):
             self.partner.write({
-               'hobbies': swimming.ids,
-               'hobby': minecraft.id,
-       })
+                'hobbies': swimming.ids,
+                'hobby': minecraft.id,
+            })
